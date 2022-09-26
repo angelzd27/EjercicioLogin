@@ -23,32 +23,28 @@ function check() {
 
 // entrar
 function entrar() {
-    const postParams = {
-        option: 'getUsuario',
-        usuario: usuario,
-        password: contraseña,
-    };
+    var data = { "_function": "fnLogin", "usuario": usuario };
 
-    const jsonData = {
-        body: JSON.stringify(postParams),
-        method: 'POST',
-    };
+    console.log(data);
 
-    fetch('http://localhost/ejericioLogin/login.php', jsonData).then(response => response.json()).then(data => {
-
-        //Si el correo y la contraseña con correctos se enviara al inicio que le corresponde
-        if (data.response == "bien") {
-
-            
-
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'El correo o la contraseña son invalidos!',
-            })
+    fetch("http://localhost/ejercicioLoginPHP/modelLogin.php", {
+       method: 'POST',
+       body: JSON . stringify(data),
+       header: {
+           'Content-Type': 'application/json'
         }
-    });
+
+    }).then ( function ( response) {
+        return response. json();
+    }).then ( function( result) {
+        console. log ("response", result) ;
+          if ( result. error){
+            swal. fire(result.message, "", "error");
+           } else {
+            window . open(result.url, '_parent');
+           }
+         vm.showOverlay = false;
+}).catch(error => console. log( 'Ha ocurrido un error: ', error) );
 
 }
 
