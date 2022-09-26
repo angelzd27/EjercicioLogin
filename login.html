@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bienvenido!</title>
+</head>
+
+<body>
+
+    <!--Logo-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="logoLogin">
+                    <img src="assets/img/logo.png" class="logoLoginImg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio de login-->
+    <div class="cont">
+        <div class="principal">
+            <div class="welcome">
+                <div class="welcom">
+                    <h1>Bienvenido!</h1>
+                    <h2>Entra con tu cuenta</h2>
+                </div>
+                <div class="entradas">
+                    <div class="entrada">
+                        <input placeholder="usuario" type="text" id="usuario">
+                    </div>
+                    <div class="entrada">
+                        <input type="password" placeholder="Password" id="contraseña">
+                    </div>
+                    <a href="recuperarContraseña.html" class="linkRecuperar">Recuperar Contraseña</a>
+                    <br>
+                    <br>
+                    <div class="btn">
+                        <button onclick="check()">Iniciar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="logic/login.js"></script> 
+</body>
+
+</html>

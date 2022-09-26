@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.logoLogin{
+    text-align: center;
+    margin-bottom: -6rem;
+    margin-top: 2rem;
+}
+
+.logoLoginImg{
+    width: 100px;
+    height: 100px;
+}
+
+.welcom{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.entradas{
+    text-align: center;
+    margin-top: 1rem;
+    color: black;
+}
+
+.entradas{
+    color: black;
+}
