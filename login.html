@@ -13,45 +13,38 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bienvenido!</title>
 </head>
-
 <body>
 
-    <!--Logo-->
+<!-- Inicio de block -->>
+<div class="block-style">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="logoLogin">
-                    <img src="assets/img/logo.png" class="logoLoginImg">
-                </div>
+                <div class="block-logo"><img src="assets/img/logo.png" class="logo-style"></div>
             </div>
         </div>
-    </div>
-
-    <!--Inicio de login-->
-    <div class="cont">
-        <div class="principal">
-            <div class="welcome">
-                <div class="welcom">
-                    <h1>Bienvenido!</h1>
-                    <h2>Entra con tu cuenta</h2>
-                </div>
-                <div class="entradas">
-                    <div class="entrada">
-                        <input placeholder="Usuario" type="text" id="usuario">
-                    </div>
-                    <div class="entrada">
-                        <input type="password" placeholder="Password" id="contraseña">
-                    </div>
-                    <a href="recuperarContraseña.html" class="linkRecuperar">Recuperar Contraseña</a>
-                    <br>
-                    <br>
-                    <div class="btn">
-                        <button onclick="check()">Iniciar sesión</button>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>¡Bienvenido!</h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Ingresa a tu cuenta</h2>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div class="row">
+            <div class="col-12">
+                <form action="">
+                    <input type="text" class="input-style" placeholder="Usuario" id="usuario">
+                    <input type="password" class="input-style" placeholder="Password" id="contraseña">
+                    <div class="link"><a href="recuperarContraseña.html" >Recupera tu contraseña</a></div>
+                    <button onclick="check()" class="btn-style">Iniciar sesión</button>
+                </form>            </div>
+        </div>
     </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
