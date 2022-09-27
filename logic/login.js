@@ -15,7 +15,6 @@ function check() {
             title: 'Oops...',
             text: 'Debes llenar todos los campos!',
         })
-
     } else {
         entrar();
     }
