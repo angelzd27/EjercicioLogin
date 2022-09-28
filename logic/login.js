@@ -22,28 +22,28 @@ function check() {
 
 // entrar
 function entrar() {
-    var data = { "_function": "fnLogin", "usuario": usuario };
+    var data = { "_function": "fnLogin", "correo": usuario, "password": contraseña };
 
     console.log(data);
 
     fetch("http://localhost/ejercicioLoginPHP/modelLogin.php", {
        method: 'POST',
-       body: JSON . stringify(data),
+       body: JSON.stringify(data),
        header: {
            'Content-Type': 'application/json'
         }
 
-    }).then ( function ( response) {
-        return response. json();
-    }).then ( function( result) {
-        console. log ("response", result) ;
-          if ( result. error){
-            swal. fire(result.message, "", "error");
+    }).then ( function (response) {
+        return response.json();
+    }).then ( function(result) {
+        console.log ("response", result) ;
+          if ( result.error){
+            swal.fire(result.message, "", "error");
            } else {
-            window . open(result.url, '_parent');
+            window.open(result.url, '_parent');
            }
-         vm.showOverlay = false;
-}).catch(error => console. log( 'Ha ocurrido un error: ', error) );
+         
+}).catch(error => console.log( 'Ha ocurrido un error: ', error) );
 
 }
 
