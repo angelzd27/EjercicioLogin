@@ -1,15 +1,15 @@
 //Variables
-var correo, contraseña, usuario = '';
+let correo, psw, usuario = '';
 //variables para editar
-var idUsuarios, idPerfil, password, oldPassword;
+let idUsuarios, idPerfil, password, oldPassword;
 // revisar
 function check() {
 
     // varificar que estén completos los campos
-    usuario = document.getElementById("usuario").value;
-    contraseña = document.getElementById("contraseña").value;
+    usuario_email = document.getElementById("usuario").value;
+    usuario_psw = document.getElementById("contraseña").value;
 
-    if (usuario.length == 0 || contraseña.length == 0) {
+    if (usuario_email.length == 0 || usuario_psw.length == 0) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -22,7 +22,10 @@ function check() {
 
 // entrar
 function entrar() {
-    var data = { "_function": "fnLogin", "correo": usuario, "password": contraseña };
+    correo = document.getElementById("usuario").value;
+    psw = document.getElementById("contraseña").value;
+
+    var data = { "_function": "fnLogin", "usuario": {"email": correo, "password": psw} };
 
     console.log(data);
 
