@@ -25,7 +25,7 @@ function entrar() {
     correo = document.getElementById("usuario").value;
     psw = document.getElementById("contraseña").value;
 
-    var data = { "_function": "fnLogin", "usuario": {"email": correo, "password": psw} };
+    var data = { "_function": "fnLogin", "usuario": {"correo": correo, "password": psw} };
 
     console.log(data);
 
@@ -46,7 +46,7 @@ function entrar() {
             window.open(result.url, '_parent');
            }
          
-}).catch(error => console.log( 'Ha ocurrido un error: ', error) );
+    }).catch(error => console.log( 'Ha ocurrido un error: ', error) );
 
 }
 
