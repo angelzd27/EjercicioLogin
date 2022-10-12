@@ -1,0 +1,36 @@
+.formulario{
+    background: #efefef;
+    width: 50%;
+    margin: 50px auto 0 auto;
+    padding: 30px 30px 60px 30px;
+    border-radius: 10px;
+}
+
+label b{
+    color: red;
+}
+
+.btn-style{
+    float: right;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-left: 15px;
+    border-radius: 100px;
+    border: none;
+    color: #FFF;
+    transition: 0.2s all;
+}
+
+.btn-add{
+    background: green;
+}
+
+.btn-cancelar{
+    background: tomato;
+}
+
+.btn-style:hover{
+    background: #FFF;
+    cursor: pointer;
+    color: #000;
+}
