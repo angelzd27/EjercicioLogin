@@ -20,6 +20,7 @@ function check() {
     }
 }
 
+
 // entrar
 function entrar() {
     correo = document.getElementById("usuario").value;
@@ -49,4 +50,6 @@ function entrar() {
     }).catch(error => console.log( 'Ha ocurrido un error: ', error) );
 
 }
+
+
 
