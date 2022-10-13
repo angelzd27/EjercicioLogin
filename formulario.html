@@ -31,21 +31,21 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label" >Contraseña <b>*</b></label>
-                        <input type="password" class="form-control" id="contrasena" placeholder="Máximo 8 Caracteres">
+                        <input type="password" class="form-control" id="password" placeholder="Máximo 8 Caracteres">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Confirmar Contraseña <b>*</b></label>
-                        <input type="password" class="form-control"  id="contrasenaConf" placeholder="Máximo 8 Caracteres">
+                        <input type="password" class="form-control"  id="passwordConf" placeholder="Máximo 8 Caracteres">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Seleccionar Perfil <b>*</b></label>
                         <select id="select_id" class="form-control">
-                            <option value="1">1 - Administrador</option>
-                            <option value="2">2 - Reportero</option>
-                            <option value="3">3 - Usuario</option>
+                            <option value="administrador">Administrador</option>
+                            <option value="reportero">Reportero</option>
+                            <option value="usuario">Usuario</option>
                         </select>
                     </div>
-                    <button onclick="checkForms()" class="btn-style btn-add">Añadir Usuario</button>
+                    <button onclick="registrar()"  class="btn-style btn-add">Añadir Usuario</button>
                     <button class="btn-style btn-cancelar">Cancelar</button>
                 </div>
             </div>
