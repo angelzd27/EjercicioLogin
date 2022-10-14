@@ -40,13 +40,14 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Seleccionar Perfil <b>*</b></label>
                         <select id="select_id" class="form-control">
+                            <option value="0" selected disabled>--Selecciona tu perfil--</option>
                             <option value="administrador">Administrador</option>
                             <option value="reportero">Reportero</option>
                             <option value="usuario">Usuario</option>
                         </select>
                     </div>
-                    <button onclick="registrar()"  class="btn-style btn-add">Añadir Usuario</button>
-                    <button class="btn-style btn-cancelar">Cancelar</button>
+                    <button onclick="checkForms()"  class="btn-style btn-add">Añadir Usuario</button>
+                    <button class="btn-style btn-cancelar" onclick="returnIndex()">Regresar</button>
                 </div>
             </div>
         </div>

@@ -3,6 +3,11 @@ let correo, psw, usuario = '';
 //variables para editar
 let idUsuarios, idPerfil, password, oldPassword;
 // revisar
+
+function returnRegistrer(){
+    window.open("./formulario.html", "_self");
+}
+
 function check() {
 
     // varificar que estén completos los campos
